@@ -1,0 +1,72 @@
+{
+  "commands": {
+    "status": {
+      "usage": "/<command>", 
+      "permission": "status", 
+      "aliases": [
+        "stat"
+      ]
+    }, 
+    "troll": {
+      "usage": "/<command> [<player>]", 
+      "permission": "op"
+    }, 
+    "openinv": {
+      "usage": "/<command> [<player>]", 
+      "permission": "op"
+    }, 
+    "home": {
+      "usage": "/<command> [<home name>]", 
+      "aliases": [
+        "hometp", 
+        "tphome"
+      ], 
+      "permission": "home.tp"
+    }, 
+    "sethome": {
+      "usage": "/<command> [<home name>]", 
+      "permission": "home.set"
+    }, 
+    "vanish": {
+      "usage": "/<command> [true|false]", 
+      "permission": "vanish"
+    }, 
+    "crazyride": {
+      "usage": "/<command>", 
+      "aliases": [
+        "cr"
+      ], 
+      "permission": "op"
+    }, 
+    "removehome": {
+      "usage": "/<command> [<home name>]", 
+      "aliases": [
+        "remhome"
+      ], 
+      "permission": "home.remove"
+    }
+  }, 
+  "description": "plugin for java", 
+  "author": "pavelstef", 
+  "name": "test", 
+  "version": "ALPHA", 
+  "api-version": 1.13, 
+  "main": "plugin.main", 
+  "permissions": {
+    "status": {
+      "default": true
+    }, 
+    "home.tp": {
+      "default": "op"
+    }, 
+    "home.set": {
+      "default": "op"
+    }, 
+    "vanish": {
+      "default": "op"
+    }, 
+    "home.remove": {
+      "default": "op"
+    }
+  }
+}
